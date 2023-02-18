@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>increment&decrement</title>
+</head>
+<body>
+    <input type="button" value="-" onclickt="dec()">
+    <input type="number" value="0" id="res">
+    <input type="button" value="+" onclick="inc()">
+    <script>
+        var a=0;
+        function inc()
+        {
+            if(a>=0 && a<30)
+            {
+                document.getElementById("res").value=++a;
+            }
+        }
+        function dec()
+        {
+            if(a>=0 && a<=30)
+            {
+                document.getElementById("res").value=--a;
+            }
+        }
+    </script>
+
+</body>
+</html>
